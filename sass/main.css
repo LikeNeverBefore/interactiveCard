@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+body {
+  font-size: 18px;
+  width: 100%;
+  min-width: 370px;
+  margin: 0 auto;
+}
+
+.bg-top {
+  height: 240px;
+  width: 100vw;
+  margin-bottom: 95px;
+  background-image: url(../images/bg-main-mobile.png);
+}
+
+.cards {
+  width: 100%;
+  min-width: 370px;
+  margin: 0 auto;
+}
+
+.cardback {
+  width: 285px;
+  height: 160px;
+  position: absolute;
+  top: 32px;
+  left: 73px;
+  border-radius: 8px;
+  background-image: url(../images/bg-card-back.png);
+  background-size: cover;
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+}
+.cardback__cvc {
+  position: absolute;
+  top: 72px;
+  right: 30px;
+  font-size: 10px;
+}
+
+.cardfront {
+  width: 285px;
+  height: 160px;
+  position: absolute;
+  top: 127px;
+  left: 17px;
+  border-radius: 8px;
+  background-image: url(../images/bg-card-front.png);
+  background-size: cover;
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+}
+.cardfront__logo {
+  position: absolute;
+  scale: 0.6;
+  top: 10px;
+}
+.cardfront__number {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  left: 25px;
+  top: 80px;
+}
+.cardfront__name {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  font-size: 10px;
+  left: 25px;
+  top: 120px;
+}
+.cardfront__mm {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  font-size: 10px;
+  left: 220px;
+  top: 120px;
+}
+.cardfront__yy {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  font-size: 10px;
+  left: 245px;
+  top: 120px;
+}
+.cardfront__slash {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  font-size: 10px;
+  left: 238px;
+  top: 120px;
+}
+
+input:user-invalid + .error-message {
+  display: block;
+}
+
+.error-message {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  letter-spacing: normal;
+  display: none;
+  font-size: 14px;
+  color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  min-height: 500px;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.form label,
+.form input {
+  display: inline-block;
+  width: 100%;
+  max-width: 330px;
+}
+.form input {
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid hsl(270, 3%, 87%);
+  padding: 0 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.form input::-moz-placeholder {
+  color: hsl(270, 3%, 87%);
+  text-transform: none;
+}
+.form input::placeholder {
+  color: hsl(270, 3%, 87%);
+  text-transform: none;
+}
+.form input:focus {
+  outline: none;
+  border: 1px solid hsl(249, 99%, 64%);
+}
+.form input:user-invalid {
+  border-color: hsl(0, 100%, 66%);
+}
+.form label {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.form button {
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(278, 68%, 11%);
+  height: 53px;
+  color: hsl(0, 0%, 100%);
+  width: 330px;
+  margin: 15px 0;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+}
+.thanks img {
+  scale: 0.8;
+  margin-bottom: 25px;
+}
+.thanks__title {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  color: hsl(278, 68%, 11%);
+}
+.thanks__text {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: hsl(279, 6%, 55%);
+}
+.thanks button {
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(278, 68%, 11%);
+  height: 53px;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  margin: 15px 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.wrapper {
+  width: 100vw;
+}
+
+.s {
+  width: 25%;
+}
+
+.m {
+  width: 45%;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+  }
+  .bg-top {
+    height: 100vh;
+    width: 30vw;
+    margin-bottom: 0;
+    background-size: cover;
+    background-image: url(../images/bg-main-desktop.png);
+  }
+  .form {
+    width: 70vw;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .form button {
+    margin: 25px auto 0;
+  }
+  .cardback,
+  .cardfront {
+    scale: 2;
+    left: 15%;
+  }
+  .cardback {
+    top: 55%;
+    left: 20%;
+  }
+  .cardfront {
+    top: 25%;
+  }
+}/*# sourceMappingURL=main.css.map */
